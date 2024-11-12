@@ -1,7 +1,6 @@
 import { API, BASE_URL, ProfileResponse } from "@/api/api";
 import { Page } from "@/components/page/Page";
 import { useInfiniteQuery } from "@tanstack/react-query";
-import { motion, useInView } from "framer-motion";
 import type { FC } from "react";
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";

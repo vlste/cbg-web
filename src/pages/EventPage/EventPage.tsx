@@ -8,7 +8,7 @@ import { mainButton, secondaryButton } from "@telegram-apps/sdk-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FC, useEffect } from "react";
 import { Trans, useTranslation } from "react-i18next";
-import { Navigate, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 interface AlertProps {
   visible: boolean;

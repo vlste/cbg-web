@@ -1,7 +1,4 @@
- 
-import { PurchasedGiftResponse } from "@/api/api";
 import { GiftInventoryCard } from "@/components/gift-card/GiftInventoryCard";
-import { USDTIcon } from "@/components/icons/USDTIcon";
 import { InfoTable } from "@/components/info-table/InfoTable";
 import { Lottie } from "@/components/lottie/Lottie";
 import { Page } from "@/components/page/Page";
@@ -23,7 +20,7 @@ import { useInView } from "react-intersection-observer";
 import { Spinner } from "@/components/spinner/Spinner";
 import { Fragment } from "react";
 import { API } from "@/api/api";
-import { formatDate, formatDateWithTime } from "@/helpers/utils";
+import { formatDateWithTime } from "@/helpers/utils";
 import { TokenIcon } from "@/components/icons/TokenIcon";
 import { EmptyState } from "@/components/empty-state/EmptyState";
 import { useNavigate } from "react-router-dom";

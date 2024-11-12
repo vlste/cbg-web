@@ -1,11 +1,9 @@
 import { publicUrl } from "@/helpers/publicUrl";
 import { useGiftStore } from "@/stores/giftStore";
 import { hapticFeedback } from "@telegram-apps/sdk-react";
-import { motion } from "framer-motion";
 import { type FC, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { Lottie } from "@/components/lottie/Lottie";
-import { USDTIcon } from "@/components/icons/USDTIcon";
 import { useTranslation } from "react-i18next";
 import { StoreGiftResponse } from "@/api/api";
 import { TokenIcon } from "../icons/TokenIcon";

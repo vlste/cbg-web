@@ -1,11 +1,10 @@
 import { FC } from "react";
 import { publicUrl } from "@/helpers/publicUrl";
-import { motion } from "framer-motion";
 import { Lottie } from "../lottie/Lottie";
 import { formatNumber } from "@/helpers/formatNumber";
 import { useTranslation } from "react-i18next";
-import { BASE_URL, PurchasedGiftResponse } from "@/api/api";
-import { avatarUrl, oneLetterAvatar } from "@/helpers/utils";
+import { PurchasedGiftResponse } from "@/api/api";
+import { avatarUrl } from "@/helpers/utils";
 import { Img } from "../img/Img";
 
 export const GiftPlainCard: FC<{

@@ -1,6 +1,6 @@
 import { Page } from "@/components/page/Page";
 import type { FC } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { useInView } from "react-intersection-observer";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -23,7 +23,6 @@ import { cn } from "@/helpers/utils";
 import { PaperplaneIcon } from "@/components/icons/PaperplaneIcon";
 import { MarketIcon } from "@/components/icons/MarketIcon";
 import { useInterval } from "@/hooks/useInterval";
-import { useScrollRestoration } from "@/hooks/useScrollRestoration";
 import { useAppStore } from "@/stores/appStore";
 
 const RecentActionRow: FC<

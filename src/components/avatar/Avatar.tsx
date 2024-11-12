@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { cn, oneLetterAvatar } from "@/helpers/utils";
+import { cn } from "@/helpers/utils";
 import { Img } from "../img/Img";
 
 export interface AvatarProps {

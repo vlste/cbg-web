@@ -1,21 +1,11 @@
 "use client";
 
-import {
-  ButtonHTMLAttributes,
-  ReactNode,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
+import { ButtonHTMLAttributes, ReactNode, useRef, useState } from "react";
 import styles from "./TabbarItem.module.css";
 import { hasReactNode } from "@/helpers/react-node";
 import clsx from "clsx";
 import { publicUrl } from "@/helpers/publicUrl";
-import {
-  DotLottie,
-  DotLottieReact,
-  DotLottieWorker,
-} from "@lottiefiles/dotlottie-react";
+import { DotLottie, DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 export interface TabbarItemProps
   extends ButtonHTMLAttributes<HTMLButtonElement> {

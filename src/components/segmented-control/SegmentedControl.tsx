@@ -1,7 +1,6 @@
 import { cn } from "@/helpers/utils";
-import { useAppStore } from "@/stores/appStore";
-import { motion, useForceUpdate } from "framer-motion";
-import { type FC, useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
+import { type FC } from "react";
 
 interface Segment {
   value: string;

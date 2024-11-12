@@ -1,6 +1,6 @@
 import { useAppStore } from "@/stores/appStore";
 import { blendColors } from "@/utils/colors";
-import { miniApp, setMiniAppHeaderColor } from "@telegram-apps/sdk-react";
+import { setMiniAppHeaderColor } from "@telegram-apps/sdk-react";
 import { motion } from "framer-motion";
 import { type FC, useEffect } from "react";
 
