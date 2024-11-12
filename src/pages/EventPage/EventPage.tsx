@@ -6,7 +6,7 @@ import { publicUrl } from "@/helpers/publicUrl";
 import { useTabbar } from "@/hooks/useTabbar";
 import { mainButton, secondaryButton } from "@telegram-apps/sdk-react";
 import { AnimatePresence, motion } from "framer-motion";
-import { FC, useEffect } from "react";
+import { FC, useEffect, useState } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
 
@@ -30,9 +30,9 @@ const Alert: FC<AlertProps> = (
 
   return (
     <motion.div
-      initial={{ y: 100, opacity: 0 }}
+      initial={{ y: 150, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      exit={{ y: 100, opacity: 0 }}
+      exit={{ y: 150, opacity: 0 }}
       className="fixed bottom-4 left-4 right-4 px-4 py-2 bg-bg-notification dark:bg-black/80 rounded-[14px] shadow-lg"
     >
       <div className="flex items-center gap-2">
@@ -75,6 +75,14 @@ export const EventPage: FC = () => {
       token: string;
     };
   };
+
+  const [alertVisible, setAlertVisible] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setAlertVisible(false);
+    }, 7000);
+  }, []);
 
   useEffect(() => {
     hide();
