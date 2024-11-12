@@ -18,7 +18,7 @@ export const StorePage: FC = () => {
   const { t } = useTranslation();
   const containerRef = useRef<HTMLDivElement>(null);
   useScrollRestoration(containerRef);
-  const appLoaded = useAppStore((state) => state.loaded);
+  // const appLoaded = useAppStore((state) => state.loaded);
   const setLoaded = useAppStore((state) => state.setLoaded);
   const { show } = useTabbar();
   const { scrollY } = useScroll({

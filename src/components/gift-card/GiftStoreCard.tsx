@@ -1,13 +1,14 @@
 import { publicUrl } from "@/helpers/publicUrl";
 import { useGiftStore } from "@/stores/giftStore";
 import { hapticFeedback } from "@telegram-apps/sdk-react";
-import { type FC, useRef } from "react";
+import { type FC, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Lottie } from "@/components/lottie/Lottie";
 import { useTranslation } from "react-i18next";
 import { StoreGiftResponse } from "@/api/api";
 import { TokenIcon } from "../icons/TokenIcon";
 import { useAppStore } from "@/stores/appStore";
+import { cn } from "@/helpers/utils";
 
 export const GiftStoreCard: FC<{ index: number; gift: StoreGiftResponse }> = ({
   index,
@@ -31,6 +32,8 @@ export const GiftStoreCard: FC<{ index: number; gift: StoreGiftResponse }> = ({
     navigate(`/store/gifts/${gift.id}`);
   };
 
+  const [lottieReady, setLottieReady] = useState(false);
+
   return (
     <div
       className="w-[calc(50%-8px)] h-[246px] relative rounded-xl animate-in-card"
@@ -53,11 +56,17 @@ export const GiftStoreCard: FC<{ index: number; gift: StoreGiftResponse }> = ({
         </div>
         <div
           ref={lottieContainerRef}
-          className="flex items-center justify-center mb-3 animate-in-lottie"
+          className={cn(
+            "flex items-center justify-center mb-3 transition-all duration-300",
+            lottieReady ? "opacity-100" : "opacity-0",
+          )}
         >
           <Lottie
             src={publicUrl(`lotties/${gift.slug}.lottie`)}
             style={{ width: "100px", height: "100px" }}
+            onReady={() => {
+              setLottieReady(true);
+            }}
           />
         </div>
 

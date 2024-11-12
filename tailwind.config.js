@@ -72,6 +72,10 @@ export default {
           "0%, 30%": { opacity: "0", filter: "blur(10px)" },
           "100%": { opacity: "1", filter: "blur(0px)" },
         },
+        "blur-in-initial": {
+          "0%, 60%": { opacity: "0", filter: "blur(10px)" },
+          "100%": { opacity: "1", filter: "blur(0px)" },
+        },
         "page-in": {
           "0%": { opacity: "0", filter: "blur(5px)", scale: "0.95" },
           "100%": { opacity: "1", filter: "blur(0px)", scale: "1" },
@@ -85,6 +89,7 @@ export default {
         "slide-down": "slide-down 0.4s cubic-bezier(0.32, 0.72, 0, 1)",
         "fade-out-down": "fade-out-down 0.4s ease-out forwards",
         "in-lottie": "blur-in 0.55s ease-out forwards",
+        "in-lottie-initial": "blur-in-initial 1s ease-out forwards",
         "in-card": "fade-in 0.35s ease-out forwards",
         "in-page": "page-in 0.25s ease-out forwards",
       },
