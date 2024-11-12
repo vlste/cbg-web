@@ -1,0 +1,27 @@
+.wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: env(safe-area-inset-bottom);
+  height: calc(58px + env(safe-area-inset-bottom));
+  border-top: 0.5px solid rgba(51, 51, 51, 0.15);
+  background: #F1F1F2f2;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 100;
+  will-change: transform;
+}
+
+:global(.dark) .wrapper {
+  background: #171717f2;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+}
+
+.tabbar {
+  display: flex;
+  justify-items: stretch;
+
+  padding: 0px 0px;
+  padding-top: 8px;
+}

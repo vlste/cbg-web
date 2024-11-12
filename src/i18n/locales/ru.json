@@ -1,0 +1,63 @@
+{
+  "store": {
+    "title": "Покупайте и отправляйте подарки",
+    "description": "Уникальные подарки для всех от Crypto Pay.",
+    "buy": {
+      "description": "Покупайте подарки и отправляйте другим пользователям."
+    }
+  },
+  "profile": {
+    "giftsReceived": "полученных подарков",
+    "noGiftsReceived": "Подарков еще нет",
+    "errorLoading": "Ошибка загрузки подарков",
+    "emptyStateDescription": "Вы можете купить подарок, чтобы получить подарок в ответ.",
+    "emptyStateButtonTitle": "Открыть Магазин",
+    "recentActions": {
+      "title": "Недавние действия",
+      "description": "Здесь ваша история действий."
+    }
+  },
+  "gifts": {
+    "title": "Отправляйте подарки в Telegram",
+    "description": "Отправляйте подарки другим пользователям.",
+    "emptyStateDescription": "У вас еще нет подарков.",
+    "emptyStateButtonTitle": "Открыть Магазин"
+  },
+  "leaderboard": {
+    "giftsReceived_zero": "нет подарков",
+    "giftsReceived_one": "{{count}} подарок",
+    "giftsReceived_two": "{{count}} подарка",
+    "giftsReceived_few": "{{count}} подарков",
+    "giftsReceived_many": "{{count}} подарков",
+    "giftsReceived_other": "{{count}} подарков"
+  },
+  "tabs": {
+    "store": "Магазин",
+    "gifts": "Подарки",
+    "leaderboard": "Лидерборд",
+    "profile": "Профиль"
+  },
+  "action": {
+    "sendGift": "Отправить подарок",
+    "purchaseGift": "Купить подарок",
+    "sentGiftTo": "отправил подарок",
+    "purchasedGift": "купил подарок",
+    "description": {
+      "send": "Трансфер",
+      "purchase": "Покупка"
+    }
+  },
+  "common": {
+    "from": "От",
+    "at": "в",
+    "recentActions": "Недавние действия",
+    "error": "Произошла ошибка",
+    "of": "из",
+    "send": "Отправить",
+    "gift": "Подарок",
+    "date": "Дата",
+    "price": "Цена",
+    "availability": "Доступность",
+    "noData": "Нет данных"
+  }
+}

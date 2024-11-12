@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: white;
+  height: 100vh;
+  overflow: hidden;
+}
+
+html {
+  height: 100vh;
+}
+
+html,
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.dark body {
+  background: #1c1c1e;
+}
+
+.dark html {
+  background: #1c1c1e;
+}
+
+/* Gradients */
+
+.card-gradient-1 {
+  background: linear-gradient(
+      180deg,
+      rgba(254, 159, 65, 0.2) 0%,
+      rgba(254, 159, 65, 0.1) 100%
+    ),
+    linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    url("/pattern_new.png") center/150%;
+}
+
+.card-gradient-2 {
+  background: linear-gradient(
+      180deg,
+      rgba(70, 209, 0, 0.2) 0%,
+      rgba(70, 209, 0, 0.06) 100%
+    ),
+    linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    url("/pattern_new.png") center/150%;
+}
+
+.card-gradient-3 {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 122, 255, 0.2) 0%,
+      rgba(0, 122, 255, 0.05) 100%
+    ),
+    linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    url("/pattern_new.png") center/150%;
+}
+
+.card-gradient-4 {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 71, 71, 0.2) 0%,
+      rgba(255, 71, 71, 0.05) 100%
+    ),
+    linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    url("/pattern_new.png") center/150%;
+}
+
+.card-gradient-5 {
+  background: linear-gradient(
+      180deg,
+      rgba(200, 71, 255, 0.2) 0%,
+      rgba(184, 71, 255, 0.05) 100%
+    ),
+    linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    url("/pattern_new.png") center/150%;
+}
+
+.dark .card-gradient-1 {
+  background: linear-gradient(
+      180deg,
+      rgba(254, 159, 65, 0.25) 0%,
+      rgba(254, 159, 65, 0.1) 100%
+    ),
+    linear-gradient(rgba(28, 28, 30, 0.6), rgba(28, 28, 30, 0.9)),
+    url("/pattern_new.png") center/150%;
+}
+
+.dark .card-gradient-2 {
+  background: linear-gradient(
+      180deg,
+      rgba(70, 209, 0, 0.25) 0%,
+      rgba(70, 209, 0, 0.06) 100%
+    ),
+    linear-gradient(rgba(28, 28, 30, 0.6), rgba(28, 28, 30, 0.9)),
+    url("/pattern_new.png") center/150%;
+}
+
+.dark .card-gradient-3 {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 122, 255, 0.25) 0%,
+      rgba(0, 122, 255, 0.05) 100%
+    ),
+    linear-gradient(rgba(28, 28, 30, 0.6), rgba(28, 28, 30, 0.9)),
+    url("/pattern_new.png") center/150%;
+}
+
+.dark .card-gradient-4 {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 71, 71, 0.2) 0%,
+      rgba(255, 71, 71, 0.05) 100%
+    ),
+    linear-gradient(rgba(28, 28, 30, 0.6), rgba(28, 28, 30, 0.9)),
+    url("/pattern_new.png") center/150%;
+}
+
+.dark .card-gradient-5 {
+  background: linear-gradient(
+      180deg,
+      rgba(175, 71, 255, 0.2) 0%,
+      rgba(181, 71, 255, 0.05) 100%
+    ),
+    linear-gradient(rgba(28, 28, 30, 0.6), rgba(28, 28, 30, 0.9)),
+    url("/pattern_new.png") center/150%;
+}

@@ -1,0 +1,87 @@
+{
+  "store": {
+    "title": "Buy and Send Gifts",
+    "description": "Unique gifts for everyone by Crypto Pay.",
+    "buy": {
+      "description": "Purchase this gift for the opportunity to give it to another user."
+    }
+  },
+  "profile": {
+    "giftsReceived": "gifts received",
+    "noGiftsReceived": "No gifts received yet",
+    "errorLoading": "Error loading gifts",
+    "emptyStateDescription": "You can buy a gift to receive a gift in return.",
+    "emptyStateButtonTitle": "Open Store",
+    "recentActions": {
+      "title": "Recent Actions",
+      "description": "Here is your action history."
+    }
+  },
+  "gifts": {
+    "title": "Send Gifts in Telegram",
+    "description": "Send gifts to users that can be stored \nin their app profile.",
+    "emptyStateDescription": "You don't have any gifts yet.",
+    "emptyStateButtonTitle": "Open Store"
+  },
+  "tabs": {
+    "store": "Store",
+    "gifts": "Gifts",
+    "leaderboard": "Leaderboard",
+    "profile": "Profile"
+  },
+  "leaderboard": {
+    "giftsReceived_zero": "no gifts",
+    "giftsReceived_one": "{{count}} gift",
+    "giftsReceived_other": "{{count}} gifts"
+  },
+  "action": {
+    "sendGift": "Send Gift",
+    "purchaseGift": "Buy Gift",
+    "sentGiftTo": "sent gift to",
+    "purchasedGift": "bought a gift",
+    "description": {
+      "send": "Transfer",
+      "purchase": "Purchase"
+    }
+  },
+  "common": {
+    "from": "From",
+    "recentActions": "Recent actions",
+    "error": "Error occurred",
+    "at": "at",
+    "of": "of",
+    "send": "Send",
+    "gift": "Gift",
+    "date": "Date",
+    "price": "Price",
+    "availability": "Availability",
+    "noData": "No data"
+  },
+  "event": {
+    "purchased": "Gift Purchased",
+    "purchasedDescription": "The <bold>{{gift}}</bold> was purchased for <bold>{{price}}</bold> <bold>{{token}}</bold>.",
+    "received": "Gift Received",
+    "receivedDescription": "You have received the gift <bold>{{gift}}</bold>.",
+    "buttons": {
+      "primary": {
+        "received": "Open Profile",
+        "purchased": "Send"
+      },
+      "secondary": {
+        "purchased": "Open Store"
+      }
+    }
+  },
+  "notification": {
+    "purchased": {
+      "title": "You Bought a Gift",
+      "description": "Now send it to your friend.",
+      "button": "Send"
+    },
+    "received": {
+      "title": "Gift Received",
+      "description": "{{gift}} from {{sender}}",
+      "button": "View"
+    }
+  }
+}

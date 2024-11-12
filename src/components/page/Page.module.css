@@ -1,0 +1,24 @@
+.page {
+  overflow-y: auto;
+  height: 100vh;
+  box-sizing: border-box;
+  padding-bottom: calc(env(safe-area-inset-bottom) + 58px);
+  background: white;
+  color: black;
+  -webkit-overflow-scrolling: touch;
+  transition: background-color 0.2s linear;
+}
+
+:global(.dark) .page {
+  background: #1C1C1E;
+  color: white;
+}
+
+.page::-webkit-scrollbar {
+  display: none;
+}
+
+.page--no-tabbar {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
