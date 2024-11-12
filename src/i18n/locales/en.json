@@ -3,7 +3,8 @@
     "title": "Buy and Send Gifts",
     "description": "Unique gifts for everyone by Crypto Pay.",
     "buy": {
-      "description": "Purchase this gift for the opportunity to give it to another user."
+      "description": "Purchase this gift for the opportunity to give it to another user.",
+      "button": "Buy a Gift"
     }
   },
   "profile": {

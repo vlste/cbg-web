@@ -184,7 +184,7 @@ export const GiftBuyPage: FC = () => {
     hide();
     setTimeout(() => {
       mainButton.setParams({
-        text: "Buy a Gift",
+        text: t("store.buy.button"),
         isLoaderVisible: false,
         hasShineEffect: true,
         isVisible: true,
@@ -305,23 +305,23 @@ export const GiftBuyPage: FC = () => {
           </div>
 
           <div className="flex items-center gap-3 mb-2">
-            <motion.h1 className="text-[24px] font-[590] text-black dark:text-white">
+            <h1 className="text-[24px] font-[590] text-black dark:text-white">
               {gift.name}
-            </motion.h1>
-            <motion.span className="text-[#007AFF] text-[14px] rounded-full bg-[rgba(0,122,255,0.1)] px-2 py-[2px] font-[500]">
+            </h1>
+            <span className="text-[#007AFF] text-[14px] rounded-full bg-[rgba(0,122,255,0.1)] px-2 py-[2px] font-[500]">
               {gift.boughtCount} {t("common.of")} {gift.totalCount}
-            </motion.span>
+            </span>
           </div>
 
-          <motion.p className="text-[17px] text-[#8E8E93] mb-3">
+          <p className="text-[17px] text-[#8E8E93] mb-3">
             {t("store.buy.description")}
-          </motion.p>
+          </p>
 
-          <motion.div className="flex items-center gap-2 text-black dark:text-white font-[510] text-[17px] mb-4">
+          <div className="flex items-center gap-2 text-black dark:text-white font-[510] text-[17px] mb-4">
             <TokenIcon token={gift.price.token} bg />
             {gift.price.amount} {gift.price.token}
-          </motion.div>
-          <motion.div className="bg-bg-secondary dark:bg-black h-3 w-[calc(100%+32px)] -mx-4" />
+          </div>
+          <div className="bg-bg-secondary dark:bg-black h-3 w-[calc(100%+32px)] -mx-4" />
         </div>
 
         <div className="mt-6">

@@ -75,7 +75,6 @@ export const BottomSheet: FC<{
         <motion.button
           onClick={onClose}
           className="absolute right-4 top-3 w-[30px] h-[30px] bg-[#e3e3e7] dark:bg-[#2C2C2E] rounded-full flex items-center justify-center"
-          whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
           <svg

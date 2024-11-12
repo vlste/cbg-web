@@ -106,16 +106,18 @@ export const EventPage: FC = () => {
     mainButton.onClick(mainButtonTap);
     secondaryButton.onClick(secondaryButtonTap);
 
-    mainButton.setParams({
-      isVisible: true,
-      text: t(`event.buttons.primary.${event.type}`),
-    });
+    setTimeout(() => {
+      mainButton.setParams({
+        isVisible: true,
+        text: t(`event.buttons.primary.${event.type}`),
+      });
 
-    secondaryButton.setParams({
-      position: "bottom",
-      isVisible: event.type === "purchased",
-      text: t(`event.buttons.secondary.${event.type}`),
-    });
+      secondaryButton.setParams({
+        position: "bottom",
+        isVisible: event.type === "purchased",
+        text: t(`event.buttons.secondary.${event.type}`),
+      });
+    }, 250);
 
     return () => {
       mainButton.offClick(mainButtonTap);
