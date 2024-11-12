@@ -6,7 +6,6 @@ export const ETHIcon = () => (
     viewBox="0 0 20 20"
     fill="none"
   >
-    <rect width="20" height="20" rx="10" fill="#627EEA" />
     <path
       d="M9.99902 3.45142V8.29299L14.0903 10.1215L9.99902 3.45142Z"
       fill="currentColor"
