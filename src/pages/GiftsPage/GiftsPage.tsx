@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+ 
 import { PurchasedGiftResponse } from "@/api/api";
 import { GiftInventoryCard } from "@/components/gift-card/GiftInventoryCard";
 import { USDTIcon } from "@/components/icons/USDTIcon";

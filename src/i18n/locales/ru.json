@@ -14,7 +14,9 @@
     "emptyStateButtonTitle": "Открыть Магазин",
     "recentActions": {
       "title": "Недавние действия",
-      "description": "Здесь ваша история действий."
+      "description": "Здесь ваша история действий.",
+      "sent": "Отправлено",
+      "bought": "Куплено"
     }
   },
   "gifts": {

@@ -47,9 +47,10 @@ const ActionRow: React.FC<{ action: ProfileRecentActionResponse }> = ({
       </div>
       <div className="ml-[12px] flex-grow">
         <div className="text-[13px] font-[400] text-label-secondary">
-          {action.type === "gift_sent" && "Sent"}
+          {action.type === "gift_sent" && t("profile.recentActions.sent")}
           {/* {action.type === "gift_received" && "Received"} */}
-          {action.type === "gift_purchased" && "Bought"}
+          {action.type === "gift_purchased" &&
+            t("profile.recentActions.bought")}
         </div>
         <div className="text-[17px] font-[500] text-black dark:text-white">
           {action.gift.name}

@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import cloneDeep from "lodash.clonedeep";
 
 export const colorify = (

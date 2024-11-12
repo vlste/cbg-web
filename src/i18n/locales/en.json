@@ -14,7 +14,9 @@
     "emptyStateButtonTitle": "Open Store",
     "recentActions": {
       "title": "Recent Actions",
-      "description": "Here is your action history."
+      "description": "Here is your action history.",
+      "sent": "Sent",
+      "bought": "Bought"
     }
   },
   "gifts": {
